@@ -4,11 +4,14 @@
 package Lab1;
 
 public class Library {
+	
     public boolean someLibraryMethod() {
         return true;
     }
     
     public static void main(String arg[]) {
-    	System.out.println("When there is a fire.");
+    	Library lib = new Library();
+    	if(lib.someLibraryMethod())
+    		System.out.println("When there is a fire.");
     }
 }
